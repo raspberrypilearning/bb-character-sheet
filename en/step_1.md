@@ -4,7 +4,11 @@ Build a digital character sheet for **Brainrot Brigade**, a collaborative sci-fi
 
 > [!NOPRINT]
 >
-> [Download the completed Scratch project](solutions/bb-character-sheet-complete.sb3), click its avatar, and try the **RANDOM**, **DICEROLL**, **P**, **E**, and **T** buttons.
+> <div class="scratch-preview">
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1195868627/?autostart=false" frameborder="0"></iframe>
+> </div>
+
+Click the avatar, then try the **RANDOM**, **DICEROLL**, **P**, **E**, and **T** buttons.
 
 > [!PRINTONLY]
 >
