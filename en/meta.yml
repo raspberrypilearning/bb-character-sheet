@@ -1,13 +1,26 @@
-title: Project title in sentence case
+title: Brainrot Brigade character sheet
 hero_image: images/banner.png
-description: A short description of the project
+description: >-
+  Build a digital character sheet that creates spacefaring heroes, rolls bonus
+  dice, and celebrates Laser Focus.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Set up your character sheet
     completion:
-      - engaged      
+      - engaged
+  - title: Roll a random character
+  - title: Build your identikit avatar
+  - title: Create your own character
+  - title: Switch on bonus dice
+  - title: Roll your first die
+  - title: Add the bonus dice
+  - title: Show every result
+  - title: Celebrate Laser Focus
+  - title: Customise your character sheet
+    completion:
+      - internal
   - title: Challenge
     challenge: true
     completion:

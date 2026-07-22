@@ -1,96 +1,17 @@
-# Project Structure
+# Brainrot Brigade character sheet
 
-This repository is used to build CCP projects. Below is the directory structure and a description of what each folder and file is used for.
+This directory contains the English Raspberry Pi Foundation Scratch project.
 
-```plaintext
-en/
-├── code/
-│   ├── project-name-complete/
-│   │   ├── main.py
-│   │   └── project_config.yml
-│   └── project-name-starter/
-│       ├── main.py
-│       └── project_config.yml
-├── images/
-│   └── .keep
-├── resources/
-│   └── .keep
-├── solutions/
-│   └── .keep
-├── README.md
-├── meta.yml
-├── step_1.md
-├── step_2.md
-└── step_3.md
-```
+Learners begin with `resources/bb-character-sheet-starter.sb3` and follow `step_1.md` through `step_12.md`. The completed Scratch project is available at `solutions/bb-character-sheet-complete.sb3`.
 
-## Directory and File Descriptions
+## Project contents
 
-### `code/`
-Contains Python or HTML code used in the Raspberry Pi Code Editor.  
-- Each project must be in its own subdirectory. Directory names should be descriptive but are otherwise flexible.  
-- Inside each subdirectory:  
-  - `main.py` (for Python projects) or `index.html` (for HTML projects)  
-  - `project_config.yml` containing:  
-    - `name`: The project name  
-    - `identifier`: A unique identifier for the project
-    - `type`: 'python' or 'html'  
-    - `build`: `false` by default; set to `true` for the editor project to be built  
+- `landing.md`: project introduction and completed-project download
+- `meta.yml`: title, description, step order, and completion flags
+- `step_1.md` to `step_12.md`: learner instructions
+- `images/`: the hero image, Scratch UI guidance, and sprite examples
+- `resources/`: the starter project, Brainrot Brigade rules, adventures, paper character sheet, and loadout list
+- `solutions/`: the completed Scratch project
+- `code/`: the source starter and complete `.sb3` files used to author the tutorial
 
-### `images/`
-Stores all images for the project.  
-- Must contain a `banner.png` (the project’s hero image).  
-- Edited images should be accompanied by their original versions.  
-- Additional supporting images should be sensibly named.  
-
-### `resources/`
-Contains supporting resources for the project.  
-- Must include the PDF version of the project, clearly named.  
-- Other resources such as offline starter projects, assets, or supporting files can also go here.  
-- Learners can download a `.zip` of this folder via:  
-  `https://rpf.io/p/en/project-slug-go`
-
-### `solutions/`
-Contains the final completed version of the project, if needed.  
-- Learners can download this via:  
-  `https://rpf.io/p/en/project-slug-get`
-
-### `meta.yml`
-Defines project metadata used for publishing. Example fields:  
-```yaml
-title: Project title in sentence case
-hero_image: images/banner.png
-description: A short description of the project
-listed: false
-pdf: false
-steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged
-  - title: Step title
-    completion:
-      - internal      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
-```
-
-- **`listed`**:  
-  - `true`: project is published from the master branch  
-  - `false`: project is not publicly listed (but still accessible via slug URL)  
-- **`pdf`**: Path to a PDF in `resources/`, making it downloadable  
-- **`completion`**: Metrics for learner progress  
-  - `engaged`: Learner has reached the first "making" step  
-  - `internal`: Final "making" step of the project  
-  - `external`: Last step of the project, often a challenge  
-- **Challenges**: Optional, provide extra tasks and count as `external` completion steps  
-
-### `README.md`
-Documentation for the project, including the structure and explanation of contents.
-
-### `step_1.md`, `step_2.md`, `step_3.md`
-Markdown files containing step-by-step instructions for learners.  
-- Each step corresponds to a tutorial section.  
-- The number of steps varies by project.  
+The lesson was written by comparing the starter and complete Scratch projects. Long scripts are built over several small tasks, and repeated dice or toggle behaviour is copied only after the learner has made and tested the first version.
